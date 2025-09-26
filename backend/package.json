@@ -4,27 +4,28 @@
   "description": "Backend API for Financial Tool App - Wage tracking and financial reporting",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/server.ts",
+    "dev": "tsx src/server.ts",
     "build": "tsc",
     "start": "node dist/server.js",
     "lint": "eslint . --ext ts --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint . --ext ts --fix"
   },
   "dependencies": {
-    "express": "^4.18.0",
-    "cors": "^2.8.0",
-    "helmet": "^7.0.0",
-    "sqlite3": "^5.1.0",
     "bcryptjs": "^2.4.0",
-    "jsonwebtoken": "^9.0.0",
-    "zod": "^3.22.0",
+    "cors": "^2.8.0",
     "date-fns": "^2.30.0",
-    "dotenv": "^16.3.0"
+    "dotenv": "^16.3.0",
+    "express": "^4.18.0",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.0",
+    "zod": "^3.22.0"
   },
   "devDependencies": {
-    "@types/express": "^4.17.0",
-    "@types/cors": "^2.8.0",
     "@types/bcryptjs": "^2.4.0",
+    "@types/cors": "^2.8.0",
+    "@types/express": "^4.17.0",
     "@types/jsonwebtoken": "^9.0.0",
     "@types/node": "^20.0.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
